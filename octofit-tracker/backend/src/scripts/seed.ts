@@ -71,6 +71,7 @@ async function seedDatabase() {
 
     console.log('Database seeding complete: users, teams, activities, leaderboard, and workouts populated');
     await mongoose.disconnect();
+    
   } catch (error) {
     console.error('Error seeding database:', error);
     process.exit(1);
